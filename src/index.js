@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import Header from "./components/header/Header";
+import About from "./components/about/About";
+import Experience from "./components/experience/Experience";
+import Portfolio from "./components/portfolio/Portfolio";
+import Contact from "./components/contact/Contact";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const AppLayout = () => (
+  <>
+    <Header />
+    <About />
+    <Experience />
+    <Portfolio />
+    <Contact />
+  </>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<AppLayout />);

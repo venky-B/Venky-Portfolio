@@ -1,0 +1,63 @@
+#experience .container {
+  background-color: var(--background-color);
+  backdrop-filter: blur(15px);
+  height: 16rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1.2rem;
+}
+
+.frontend-text {
+  display: flex;
+  height: 4rem;
+  align-items: center;
+}
+
+.logos {
+  display: flex;
+  height: 10rem;
+}
+
+.skill_card > .logo {
+  width: 5rem;
+  opacity: 0.7;
+}
+
+.logos > .skill_card {
+  padding: 1rem 2rem 0 2rem;
+  display: flex;
+  gap: 0.5rem;
+  width: 12rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill_card:hover .logo {
+  transition: all 0.2s ease-in-out;
+  width: 6rem;
+  opacity: 1;
+}
+
+.skill_card:hover .skill_text {
+  color: white;
+}
+
+.skill_text {
+  font-size: 1rem;
+}
+
+#experience {
+  height: 50vh;
+}
+
+/* ============ MEDIA QUERIES (MEDIUM DEVICES ) ========= */
+@media screen and (max-width: 1024px) {
+}
+
+/* ============ MEDIA QUERIES (SMALL DEVICES ) ========= */
+@media screen and (max-width: 600px) {
+}
